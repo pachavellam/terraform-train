@@ -27,3 +27,5 @@ variable "image" {
   description = "Disk image for the instance"
   type        = string
 }
+
+//"projects/debian-cloud/global/images/family/debian-10"

@@ -13,6 +13,6 @@ module "gcp_instance" {
   zone          = var.zone
   instance_name = var.instance_name
   machine_type  = var.machine_type
-  image         = "projects/debian-cloud/global/images/family/debian-10"  // Example image
-  tags          = ["web", "test"]
+  image         = var.image
+
 }
