@@ -18,12 +18,4 @@ variable "zone" {
   default     = ""
 }
 
-variable "instances" {
-  description = "List of instances to create"
-  type = list(object({
-    name         = string
-    machine_type = string
-    image        = string
-    tags         = list(string)
-  }))
-}
+
