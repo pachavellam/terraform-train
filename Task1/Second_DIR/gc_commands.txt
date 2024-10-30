@@ -1,4 +1,4 @@
 gcloud auth list
 gcloud config list project
-terraform import 'module.gcp_instances.google_compute_instance.instances["instance-1"]' instance-1-id
-terraform import 'module.gcp_instances.google_compute_instance.instances["instance-2"]' instance-2-id
+terraform import 'module.gcp_instances.google_compute_instance.instances["tf-instance-1"]' tf-instance-1
+terraform import 'module.gcp_instances.google_compute_instance.instances["tf-instance-2"]' tf-instance-2

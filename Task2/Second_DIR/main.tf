@@ -26,3 +26,10 @@ module "gcp_instances" {
     }
   ]
 }
+
+//terraform {
+//  backend "gcs" {
+//    bucket  = "Bucket Name"
+//    prefix  = "terraform/state"
+  //}
+//}
