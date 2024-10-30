@@ -1,2 +1,4 @@
 gcloud auth list
 gcloud config list project
+terraform init
+terraform import module.gcp_instance.google_compute_instance.example your-instance-name
