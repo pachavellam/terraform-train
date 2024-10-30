@@ -23,5 +23,8 @@ resource "google_compute_instance" "instances" {
     access_config {}  // Ephemeral public IP
   }
 
-
+   metadata_startup_script = <<-EOT
+           #!/bin/bash
+       EOT
+   allow_stopping_for_update = true
 }

@@ -21,6 +21,6 @@ variable "instances" {
     name         = string
     machine_type = string
     image        = string
-    tags         = list(string)
+
   }))
 }
