@@ -15,18 +15,12 @@ variable "zone" {
   type        = string
 }
 
-variable "instance_name" {
-  description = "Name of the instance"
-  type        = string
+variable "instances" {
+  description = "List of instances to create"
+  type = list(object({
+    name         = string
+    machine_type = string
+    image        = string
+    tags         = list(string)
+  }))
 }
-
-variable "machine_type" {
-  description = "Machine type for the instance"
-  type        = string
-}
-
-variable "image" {
-  description = "Disk image for the instance"
-  type        = string
-}
-
